@@ -102,7 +102,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-avatar (0.6.0)
       jekyll (~> 3.0)
-    jekyll-cayman-theme (0.1.0)
     jekyll-coffeescript (1.1.1)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.11.1)
@@ -151,6 +150,8 @@ GEM
     jekyll-theme-cayman (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
+    jekyll-theme-cayman-blog (0.0.6)
+      jekyll (~> 3.3)
     jekyll-theme-dinky (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -249,8 +250,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 200)
   jekyll (= 3.8.5)
-  jekyll-cayman-theme
   jekyll-feed (~> 0.11.0)
+  jekyll-theme-cayman-blog
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

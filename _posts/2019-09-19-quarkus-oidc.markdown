@@ -1,28 +1,24 @@
 ---
-title:  "Welcome to Jekyll!"
+title:  "Quarkus OIDC"
 date:   2019-09-19 22:12:07 -0500
 categories: quarkus
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+ 
+[Quarkus OIDC] is a Quarkus extension to enact OIDC authentication redirects on set web content. 
 
-Jekyll requires blog post files to be named according to the following format:
+The extension can be enabled by adding the extension as a dependency to the Maven project and adding the following lines to the application.properties file:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+{% highlight java %}
+quarkus.oidc.security-constraints.1.roles=Everyone
+quarkus.oidc.security-constraints.1.web-resources=/*
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+#External IDP 
+quarkus.oidc.issuer=https://someorg.okta.com
+quarkus.oidc.client-id=XXXXXXXXXXX 
+quarkus.oidc.client-secret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the [Quarkus]  for more details on the microservices platform.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[Quarkus OIDC]: https://github.com/aaronanderson/quarkus-oidc
+[Quarkus]: https://quarkus.io/
