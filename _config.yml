@@ -29,7 +29,8 @@ github_username:  aaronanderson
 
 # Build settings
 #theme: jekyll-theme-cayman
-theme: jekyll-theme-cayman-blog
+#theme: jekyll-theme-cayman-blog
+remote_theme: lorepirri/cayman-blog
 #theme: 
 plugins:
   - jekyll-feed
